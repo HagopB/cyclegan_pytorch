@@ -33,16 +33,16 @@ Now all the dependencies must be installed without problems. (The env contains o
 ### How do I train CycleGAN with new images ?
 you may have information on how to run ```train.py``` by:
 ```
-python predict.py --help
+python train.py --help
 ```
 you can train your own model by running (N.B.: example):
 ```
-python train.py --path_trainA ./data/trainA --path_trainB ./data/trainB --pic_dir ./intermediate_res
+python train.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_dropout
 ```
-### How do I deploy CycleGAN on new images after training?
-you can deploy the model on a given collection, in order to transform A to B or B to A (Possible only after training).
+### How do I test CycleGAN on new images after training?
+you can test the model on a given collection, in order to transform A to B or B to A (Possible only after training).
 ```
-python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./../a2b.h5
+python test.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_dropout --phase test --results_dir ./result_folder
 ```
 ### Contents
 ```
@@ -52,6 +52,7 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
          ├── testB                    # test images belonging to class B
          ├── trainA                   # train images belonging to class A
          └── trainB                   # train images belonging to class B
+    ├── images                        # images ... 
     ├── models
         └── ...                       # cycle gan model implementation .py
     ├── options                      
@@ -65,7 +66,6 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
 
 
 ```
-
 ### Demonstration: De-raining images 
 The example below present 15 rainy images where cycleGAN has been used to de-rain.
 
