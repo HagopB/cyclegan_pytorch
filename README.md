@@ -1,4 +1,4 @@
-# CycleGAN PyTorch#
+# CycleGAN PyTorch #
 
 ### What is this repository for? 
 Implementation of CycleGan model in PyTorch ([original implementation link](https://github.com/junyanz/CycleGAN)). 
