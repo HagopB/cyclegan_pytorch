@@ -46,7 +46,6 @@ python test.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_d
         └── ...                       # options : base, train, test .py
     ├── util    
         └── ...                       # utils .py               
-    ├── deepenv.yml                   # Environment (keras 2, tensorflow 1.1, etc ...)
     ├── test.py                       # to test
     ├── train.py                      # to train
     ├── README.md                     # Readme
