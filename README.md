@@ -1,4 +1,4 @@
-# CycleGAN #
+# CycleGAN PyTorch#
 
 ### What is this repository for? 
 Implementation of CycleGan model in PyTorch ([original implementation link](https://github.com/junyanz/CycleGAN)). 
@@ -69,7 +69,8 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
 ### Acknowledgement
 The code is based on two keras implementations:
 * [https://github.com/junyanz/CycleGAN](https://github.com/junyanz/CycleGAN) by Jun-Yan Zhu and Taesung Park
-* 
+* [https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss](https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss) by Elias Vansteenkiste
+
 ### Demonstration: De-raining images 
 The example below present 15 rainy images where cycleGAN has been used to de-rain.
 
