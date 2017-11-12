@@ -59,7 +59,7 @@ The example below present 12 rainy images where cycleGAN has been used to de-rai
 ![](https://github.com/HagopB/cyclegan_pytorch/blob/master/images/demo.png)
 
 ### Acknowledgement
-The code is based on two keras implementations:
+Based on two implementations:
 * [https://github.com/junyanz/CycleGAN](https://github.com/junyanz/CycleGAN) by Jun-Yan Zhu and Taesung Park
 * [https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss](https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss) by Elias Vansteenkiste
 
