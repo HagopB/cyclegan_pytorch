@@ -1,7 +1,7 @@
 # CycleGAN PyTorch #
 
 ### What is this repository for? 
-Implementation of CycleGan model in PyTorch ([original implementation link](https://github.com/junyanz/CycleGAN)). 
+Implementation of CycleGan model in PyTorch ([original implementation link](https://github.com/junyanz/CycleGAN)). The implementation is used to remove rain from rainy images.
 
 ### How do I get set up ?
 ##### Step by step:
@@ -17,19 +17,6 @@ python setup.py install
 pip install visdom
 pip install dominate
 ```
-
-##### Or use provided env:
-Install Anaconda 3
-Import the conda environment named `deepenv` using : 
-```
-conda env create -f deepenv.yml
-```
-Activate that environment using :
-```
-source activate deepenv
-```
-Now all the dependencies must be installed without problems. (The env contains other libraries used for deep learning as well, e.g. Keras, tensorflow ....). It is of course advised to install pytorch step by step.
-
 ### How do I train CycleGAN with new images ?
 you may have information on how to run ```train.py``` by:
 ```
@@ -39,7 +26,7 @@ you can train your own model by running (N.B.: example):
 ```
 python train.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_dropout
 ```
-### How do I test CycleGAN on new images after training?
+### How do I test CycleGAN after training?
 you can test the model on a given collection, in order to transform A to B or B to A (Possible only after training).
 ```
 python test.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_dropout --phase test --results_dir ./result_folder
