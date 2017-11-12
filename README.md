@@ -54,7 +54,7 @@ python test.py --dataroot ./data --name cyclegan_custom --model cycle_gan --no_d
 
 ```
 ### Demonstration: De-raining images 
-The example below present 15 rainy images where cycleGAN has been used to de-rain.
+The example below present 12 rainy images where cycleGAN has been used to de-rain.
 
 ![](https://github.com/HagopB/cyclegan_pytorch/blob/master/images/demo.png)
 
