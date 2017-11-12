@@ -52,11 +52,9 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
          ├── testB                    # test images belonging to class B
          ├── trainA                   # train images belonging to class A
          └── trainB                   # train images belonging to class B
-    ├── models                        # cycle gan model implementation
-         ├── testA                    # test images belonging to class A
-         ├── testB                    # test images belonging to class B
-         ├── trainA                   # train images belonging to class A
-         └── trainB                   # train images belonging to class B
+    ├── models                        # cycle gan model implementation .py
+    ├── util                          # utils .py               
+    ├── options                       # options : base, train, test
     ├── deepenv.yml                   # Environment (keras 2, tensorflow 1.1, etc ...)
     ├── discriminator.py              # discriminator
     ├── generator.py                  # generator (Resblock 6)
@@ -66,13 +64,16 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
 
 
 ```
-### Acknowledgement
-The code is based on two keras implementations:
-* [https://github.com/junyanz/CycleGAN](https://github.com/junyanz/CycleGAN) by Jun-Yan Zhu and Taesung Park
-* [https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss](https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss) by Elias Vansteenkiste
 
 ### Demonstration: De-raining images 
 The example below present 15 rainy images where cycleGAN has been used to de-rain.
 
 ![](https://github.com/HagopB/cyclegan/blob/master/pics/demo_rainremoval.png)
+
+### Acknowledgement
+The code is based on two keras implementations:
+* [https://github.com/junyanz/CycleGAN](https://github.com/junyanz/CycleGAN) by Jun-Yan Zhu and Taesung Park
+* [https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss](https://github.com/EliasVansteenkiste/CycleGANwithPerceptionLoss) by Elias Vansteenkiste
+
+
 
