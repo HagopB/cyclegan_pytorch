@@ -52,14 +52,15 @@ python test.py --path_images ./data/trainA --pic_dir ./results --model_path ./..
          ├── testB                    # test images belonging to class B
          ├── trainA                   # train images belonging to class A
          └── trainB                   # train images belonging to class B
-    ├── models                        # cycle gan model implementation .py
-    ├── util                          # utils .py               
-    ├── options                       # options : base, train, test
+    ├── models
+        └── ...                       # cycle gan model implementation .py
+    ├── options                      
+        └── ...                       # options : base, train, test .py
+    ├── util    
+        └── ...                       # utils .py               
     ├── deepenv.yml                   # Environment (keras 2, tensorflow 1.1, etc ...)
-    ├── discriminator.py              # discriminator
-    ├── generator.py                  # generator (Resblock 6)
-    ├── layers.py                     # ReflectPadding2D & InstanceNormalization2D
-    ├── models.py                     # cycleGAN: fit & predict
+    ├── test.py                       # to test
+    ├── train.py                      # to train
     ├── README.md                     # Readme
 
 
